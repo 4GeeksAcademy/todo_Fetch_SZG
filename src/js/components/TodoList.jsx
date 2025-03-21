@@ -28,7 +28,10 @@ const TodoList = () => {
     //HTML task template
     const taskList = todos.length === 0 ?
         <li className="list-group-item shadow-sm d-flex justify-content-center">
-            There are no task to be done. You can add new tasks now!
+            <div class="alert alert-info mt-2" role="alert">
+                There are no task to be done. You can add new tasks now!
+            </div>
+
         </li>
         :
         todos.map((task, index) =>
