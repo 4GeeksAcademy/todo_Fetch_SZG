@@ -9,13 +9,46 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+body {
+  background: rgb(214, 214, 214);
+  font-family: "DM Sans", sans-serif;
+}
 .removeButton {
   visibility: hidden;
-  background: none;
   border: none;
-  color: red;
+  margin-left: 10px;
+  color: rgb(194, 0, 0);
+  background: none;
 }
-
 li:hover .removeButton {
   visibility: visible;
+}
+
+.container {
+  width: 40%;
+}
+
+textarea:focus,
+input[type="text"],
+input[type="text"]:focus {
+  font-size: 1.2em;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  color: rgb(0, 101, 168);
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: rgb(189, 189, 189);
+}
+.taskFooter {
+  color: gray;
+  font-size: 0.8em;
+  padding: 10px;
+  margin-left: 25px;
+}
+.footer {
+  margin-top: 20px;
+  color: gray;
 }
