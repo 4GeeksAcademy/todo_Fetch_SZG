@@ -9,3 +9,13 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.removeButton {
+  visibility: hidden;
+  background: none;
+  border: none;
+  color: red;
+}
+
+li:hover .removeButton {
+  visibility: visible;
+}
