@@ -98,8 +98,8 @@ const TodoList = () => {
                 key={index}
             >
                 <div className="row col-12">
-                    <div className="col-1">{index + 1} - {todo.id}</div>
-                    {todo.is_done ? <div className="col-10  text-decoration-line-through" > {todo.label} </div> : <div className="col-10">{todo.label} </div>}
+                    <div className="col-1">{index + 1}</div>
+                    {todo.is_done ? <div className="col-10  text-decoration-line-through" style="color:lightgray" > {todo.label} </div> : <div className="col-10">{todo.label} </div>}
                     <div className="col-1">
                         <button
                             className="removeButton rounded-circle"
