@@ -74,7 +74,7 @@ const TodoList = () => {
                 // Aquí es donde debe comenzar tu código después de que finalice la búsqueda
                 const updatedTodos = todos.filter(todo => todo.id !== taskToRemove);
                 setTodos(updatedTodos);
-                loadTodos();
+
             })
             .catch(error => {
                 // Manejo de errores
